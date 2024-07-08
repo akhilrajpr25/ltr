@@ -57,7 +57,7 @@ const Login = () => {
     onSubmit: (values) => {
       const { username, password } = values;
       if (login(username, password)) {
-        navigate("/home");
+        navigate("/");
       } else {
         setNotification({
           open: true,
